@@ -6,6 +6,7 @@ help:
 	@echo "Makefile for dotfiles                                         "
 	@echo "                                                              "
 	@echo "Usage:                                                        "
+	@echo "    make install                 	Installs everything  "
 	@echo "    make install_{TARGET}                Installs the TARGET  "
 	@echo "    make uninstall_{TARGET}              Installs the TARGET  "
 	@echo "                                                              "
@@ -16,6 +17,11 @@ help:
 	@echo "All install commands are also available as uninstall commands "
 	@echo "to remove installed contents                                  "
 	@echo "                                                              "
+
+install: uninstall_zsh uninstall_tmux
+	sh `pwd`/install.sh
+	make install_zsh
+	make install_tmux
 
 install_zsh: uninstall_zsh
 	RUNZSH="no" sh `pwd`/zsh/install.sh
