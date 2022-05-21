@@ -18,7 +18,6 @@ brew install mongodb
 brew install neovim
 brew install node
 brew install nghttp2
-brew install nvm
 brew install postgresql
 brew install python
 brew install python3
