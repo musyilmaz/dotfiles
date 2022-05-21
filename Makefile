@@ -17,9 +17,19 @@ help:
 	@echo "to remove installed contents                                  "
 	@echo "                                                              "
 
+install_zsh: uninstall_zsh
+	RUNZSH="no" sh `pwd`/zsh/install.sh
+	mkdir ~/.zshscripts
+	ln -sF `pwd`/zsh/zsh_aliases ~/.zshscripts/.aliases
+	ln -sf `pwd`/zsh/zshrc	~/.zshrc
+	zsh
+
+uninstall_zsh:
+	rm -rf ~/.zshrc
+	rm -rf ~/.oh-my-zsh
+	rm -rf ~/.zshscripts
+
 install_tmux: uninstall_tmux
-	[ -d ~/.local/bin/tmux-powerline ] || mkdir -p ~/.local/bin/tmux-powerline && cd ~/.local/bin/tmux-powerline && git clone https://github.com/erikw/tmux-powerline.git .
-	[ -d ~/.local/bin/tmux-powerline ] && cd ~/.local/bin/tmux-powerline && git pull
 	ln -sf `pwd`/tmux/tmux.conf ~/.tmux.conf
 
 uninstall_tmux:
