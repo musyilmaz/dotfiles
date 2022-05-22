@@ -22,13 +22,14 @@ install: uninstall_zsh uninstall_tmux
 	sh `pwd`/install.sh
 	make install_zsh
 	make install_tmux
+	make install_nvim
 
 install_zsh: uninstall_zsh
 	RUNZSH="no" sh `pwd`/zsh/install.sh
 	mkdir ~/.zshscripts
 	ln -sF `pwd`/zsh/zsh_aliases ~/.zshscripts/.aliases
 	ln -sf `pwd`/zsh/zshrc	~/.zshrc
-	zsh
+	@echo ">>>> Run zsh to initiate shell"
 
 uninstall_zsh:
 	rm -rf ~/.zshrc
@@ -40,3 +41,11 @@ install_tmux: uninstall_tmux
 
 uninstall_tmux:
 	rm -rf ~/.tmux.conf
+
+install_nvim: uninstall_nvim
+	ln -sf `pwd`/nvim ~/.config/nvim
+	@echo ">>>> Run vim & PackerInstall to install packages"
+
+uninstall_nvim:
+	rm -rf ~/.config/nvim
+	rm -rf ~/.local/share/nvim
