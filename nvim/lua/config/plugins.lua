@@ -38,6 +38,9 @@ return packer.startup(function(use)
   use "luisiacc/gruvbox-baby"
 	use "folke/tokyonight.nvim"
   use "tomasiser/vim-code-dark"
+  use "rafamadriz/neon"
+  use 'marko-cerovac/material.nvim'
+  use 'shaunsingh/nord.nvim'
   
   use {
     'nvim-treesitter/nvim-treesitter',
