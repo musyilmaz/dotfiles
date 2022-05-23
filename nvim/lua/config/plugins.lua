@@ -1,4 +1,5 @@
 local fn = vim.fn
+local vim = vim
 
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -83,10 +84,12 @@ return packer.startup(function(use)
   use 'lewis6991/impatient.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
   use "numToStr/Comment.nvim"
 	use "JoosepAlviste/nvim-ts-context-commentstring"
   use "mickael-menu/zk-nvim"
   use { "ellisonleao/glow.nvim", branch = 'main' }
   use "sbdchd/neoformat"
+  use "yamatsum/nvim-cursorline"
 
 end)
