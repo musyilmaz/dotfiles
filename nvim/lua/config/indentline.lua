@@ -45,7 +45,8 @@ vim.g.indent_blankline_context_patterns = {
 -- HACK: work-around for https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
 vim.wo.colorcolumn = "99999"
 
-indent_blankline.setup({
+indent_blankline.setup {
 	show_current_context = true,
-})
+  show_current_context_start = true,
+}
 

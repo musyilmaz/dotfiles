@@ -37,6 +37,23 @@ return packer.startup(function(use)
   use "luisiacc/gruvbox-baby"
 	use "folke/tokyonight.nvim"
   use "tomasiser/vim-code-dark"
+  
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+
+  use "williamboman/nvim-lsp-installer"
+ 	use "jose-elias-alvarez/null-ls.nvim"
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -45,6 +62,11 @@ return packer.startup(function(use)
     },
     tag = 'nightly' 
   }
+
+  use "nvim-telescope/telescope.nvim"
+	use "nvim-telescope/telescope-file-browser.nvim"
+
+	use "lewis6991/gitsigns.nvim"
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -59,8 +81,12 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
 
   use 'lewis6991/impatient.nvim'
-
   use "lukas-reineke/indent-blankline.nvim"
-
+  use "windwp/nvim-autopairs"
+  use "numToStr/Comment.nvim"
+	use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "mickael-menu/zk-nvim"
+  use { "ellisonleao/glow.nvim", branch = 'main' }
+  use "sbdchd/neoformat"
 
 end)
