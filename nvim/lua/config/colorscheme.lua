@@ -1,8 +1,9 @@
 vim.o.background = "dark" -- or "light" for light mode
 
-local colorscheme = "gruvbox-material"
+-- local colorscheme = "gruvbox-material"
+-- local colorscheme = "catppuccin"
 -- local colorscheme = "tokyonight"
--- local colorscheme = 'gruvbox-baby'
+local colorscheme = "gruvbox-baby"
 -- local colorscheme = 'neon'
 -- local colorscheme = 'codedark'
 -- local colorscheme = 'nord'

@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-gitsigns.setup {
+gitsigns.setup({
 	signs = {
 		add = { hl = "GitSignsAdd", text = "▎", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
 		change = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
@@ -19,7 +19,7 @@ gitsigns.setup {
 	signcolumn = true,
 	numhl = true,
 	linehl = false,
-	word_diff = true,
+	word_diff = false,
 	watch_gitdir = {
 		interval = 1000,
 		follow_files = true,
@@ -49,4 +49,4 @@ gitsigns.setup {
 	yadm = {
 		enable = false,
 	},
-}
+})

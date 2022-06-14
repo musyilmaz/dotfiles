@@ -16,7 +16,7 @@ brew install glow
 brew install go
 brew install mongodb
 brew install neovim
-brew install node
+# brew install node
 brew install nghttp2
 brew install postgresql
 brew install python
@@ -27,21 +27,3 @@ brew install yarn
 brew install zk
 brew install zsh
 
-
-
-
-# ==> Casks
-#anydesk
-#discord
-#folx
-#gimp
-#iterm2
-#keka
-#kitty
-#microsoft-remote-desktop
-#postman
-#spotify
-#teamviewer
-#visual-studio-code
-#vlc
-#zoom

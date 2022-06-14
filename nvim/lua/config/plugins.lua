@@ -30,69 +30,71 @@ if not status_ok then
 end
 
 return packer.startup(function(use)
-  use "wbthomason/packer.nvim"
-	use "nvim-lua/popup.nvim"
-	use "nvim-lua/plenary.nvim"
+	use("wbthomason/packer.nvim")
+	use("nvim-lua/popup.nvim")
+	use("nvim-lua/plenary.nvim")
 
-  use "sainnhe/gruvbox-material"
-  use "luisiacc/gruvbox-baby"
-	use "folke/tokyonight.nvim"
-  use "tomasiser/vim-code-dark"
-  use "rafamadriz/neon"
-  use 'marko-cerovac/material.nvim'
-  use 'shaunsingh/nord.nvim'
-  
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
+	use("sainnhe/gruvbox-material")
+	use("luisiacc/gruvbox-baby")
+	use("folke/tokyonight.nvim")
+	use("tomasiser/vim-code-dark")
+	use("rafamadriz/neon")
+	use("marko-cerovac/material.nvim")
+	use("shaunsingh/nord.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	})
 
-  use "williamboman/nvim-lsp-installer"
- 	use "jose-elias-alvarez/null-ls.nvim"
+	use("neovim/nvim-lspconfig")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
+	use("hrsh7th/nvim-cmp")
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
+	use("rafamadriz/friendly-snippets")
 
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', 
-    },
-    tag = 'nightly' 
-  }
+	use("williamboman/nvim-lsp-installer")
+	use("jose-elias-alvarez/null-ls.nvim")
 
-  use "nvim-telescope/telescope.nvim"
-	use "nvim-telescope/telescope-file-browser.nvim"
+	use({
+		"kyazdani42/nvim-tree.lua",
+		requires = {
+			"kyazdani42/nvim-web-devicons",
+		},
+		tag = "nightly",
+	})
 
-	use "lewis6991/gitsigns.nvim"
+	use("nvim-telescope/telescope.nvim")
+	use("nvim-telescope/telescope-file-browser.nvim")
 
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+	use("lewis6991/gitsigns.nvim")
 
-  use {
-    'akinsho/bufferline.nvim', 
-    tag = "v2.*", 
-    requires = 'kyazdani42/nvim-web-devicons'
-  }
-  use "moll/vim-bbye"
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 
-  use 'lewis6991/impatient.nvim'
-  use "lukas-reineke/indent-blankline.nvim"
-  use "windwp/nvim-autopairs"
-  use "windwp/nvim-ts-autotag"
-  use "numToStr/Comment.nvim"
-	use "JoosepAlviste/nvim-ts-context-commentstring"
-  use "mickael-menu/zk-nvim"
-  use { "ellisonleao/glow.nvim", branch = 'main' }
-  use "sbdchd/neoformat"
-  use "yamatsum/nvim-cursorline"
+	use({
+		"akinsho/bufferline.nvim",
+		tag = "v2.*",
+		requires = "kyazdani42/nvim-web-devicons",
+	})
+	use("moll/vim-bbye")
 
+	use("lewis6991/impatient.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
+	use("windwp/nvim-autopairs")
+	use("windwp/nvim-ts-autotag")
+	use("numToStr/Comment.nvim")
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use("mickael-menu/zk-nvim")
+	use({ "ellisonleao/glow.nvim", branch = "main" })
+	use("sbdchd/neoformat")
+	use("yamatsum/nvim-cursorline")
+	use("github/copilot.vim")
 end)
