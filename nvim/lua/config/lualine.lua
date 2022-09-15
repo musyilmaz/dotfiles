@@ -55,7 +55,7 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "gruvbox-material",
+		theme = "jellybeans",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
@@ -66,7 +66,7 @@ lualine.setup({
 		lualine_b = { branch, diagnostics },
 		lualine_c = {},
 		lualine_x = { diff, spaces, "encoding", filetype },
-		lualine_y = {  },
+		lualine_y = {},
 	},
 	inactive_sections = {
 		lualine_a = {},
