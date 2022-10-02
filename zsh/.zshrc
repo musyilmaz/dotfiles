@@ -13,8 +13,14 @@ alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
 alias vim="nvim"
 
+alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
+
 PATH="/opt/homebrew/bin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+
+CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

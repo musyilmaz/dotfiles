@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name  = Mustafa Yilmaz
+  email = musyilmaz.dev@gmail.com
+
+[alias]
+  s  = status
+  a  = add
+  ci = commit
+  br = branch
+  co = checkout
