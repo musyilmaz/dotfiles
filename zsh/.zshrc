@@ -13,7 +13,9 @@ alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
 alias vim="nvim"
 
+# Path Shortcuts
 alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
+alias dotfiles="cd /Users/musyilmaz/Documents/development/dotfiles/"
 
 PATH="/opt/homebrew/bin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"

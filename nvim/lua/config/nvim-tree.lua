@@ -101,7 +101,7 @@ nvim_tree.setup({
 	filters = {
 		dotfiles = false,
 		custom = { ".git" },
-		exclude = { ".env" },
+		exclude = { ".env", ".gitconfig" },
 	},
 	git = {
 		enable = true,
