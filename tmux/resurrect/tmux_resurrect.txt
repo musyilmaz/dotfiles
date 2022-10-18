@@ -1,0 +1,17 @@
+pane	cf	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	0	zsh	:
+pane	cf	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/firebase/functions	0	zsh	:
+pane	cf	1	1	:*	3	192.168.68.114	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	0	zsh	:
+pane	cf	1	1	:*	4	192.168.68.114	:/Users/musyilmaz	1	zsh	:
+pane	dot	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/dot	1	zsh	:
+pane	dot	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/dot	0	zsh	:
+pane	dot	1	1	:*	3	192.168.68.114	:/Users/musyilmaz/Documents/development/dot	0	zsh	:
+pane	dot	1	1	:*	4	192.168.68.114	:/Users/musyilmaz/Documents/development/dot	0	zsh	:
+pane	dotfiles-2	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	0	nvim	:nvim
+pane	dotfiles-2	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	0	zsh	:
+pane	dotfiles-2	1	1	:*	3	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	1	tmux	:tmux source /Users/musyilmaz/.tmux.conf
+pane	dotfiles-2	2	0	:-	1	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	1	zsh	:
+window	cf	1	:zsh	1	:*	a0c0,272x59,0,0{136x59,0,0[136x26,0,0,1,136x14,0,27,2,136x17,0,42,3],135x59,137,0,4}	:
+window	dot	1	:zsh	1	:*	eba7,272x59,0,0{113x59,0,0[113x29,0,0,5,113x14,0,30,6,113x14,0,45,7],158x59,114,0,8}	:
+window	dotfiles-2	1	:tmux	1	:*	3617,272x58,0,0{147x58,0,0[147x34,0,0,9,147x23,0,35,13],124x58,148,0,10}	:
+window	dotfiles-2	2	:zsh	0	:-	67e1,272x58,0,0,12	:
+state	dotfiles-2	cf

@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
 alias vim="nvim"
+alias python="python3"
 
 # Path Shortcuts
 alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
@@ -21,7 +22,6 @@ alias dotfiles="cd /Users/musyilmaz/Documents/development/dotfiles/"
 PATH="/opt/homebrew/bin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 
 CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
