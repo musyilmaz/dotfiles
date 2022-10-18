@@ -15,6 +15,7 @@ alias vim="nvim"
 
 # Path Shortcuts
 alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
+alias dot="cd /Users/musyilmaz/Documents/development/dot/"
 alias dotfiles="cd /Users/musyilmaz/Documents/development/dotfiles/"
 
 PATH="/opt/homebrew/bin:$PATH"
