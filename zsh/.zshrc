@@ -18,6 +18,7 @@ alias python="python3"
 alias dev="cd /Users/musyilmaz/Documents/development/"
 alias playground="cd /Users/musyilmaz/Documents/development/playground/"
 alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
+alias rmore="cd /Users/musyilmaz/Documents/development/rmore/"
 alias dot="cd /Users/musyilmaz/Documents/development/dot/"
 alias dotfiles="cd /Users/musyilmaz/Documents/development/dotfiles/"
 alias musyilmaz="cd /Users/musyilmaz/Documents/development/musyilmaz.dev/"
@@ -45,3 +46,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
