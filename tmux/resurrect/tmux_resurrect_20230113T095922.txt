@@ -1,0 +1,15 @@
+pane	cf	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	1	zsh	:
+pane	cf	2	0	:-	1	192.168.68.109	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/site	0	zsh	:
+pane	cf	2	0	:-	2	192.168.68.109	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/site	1	zsh	:
+pane	dotfiles-2	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	1	nvim	:nvim
+pane	dotfiles-2	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/dotfiles	0	zsh	:
+pane	playground	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/playground/advent_of_code_2022	0	zsh	:
+pane	playground	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/playground/advent_of_code_2022	1	zsh	:
+pane	rmore	1	1	:*	1	192.168.68.114	:/Users/musyilmaz/Documents/development/rmore	1	zsh	:
+pane	rmore	1	1	:*	2	192.168.68.114	:/Users/musyilmaz/Documents/development/rmore	0	zsh	:
+window	cf	1	:zsh	1	:*	d360,272x59,0,0,3	:
+window	cf	2	:zsh	0	:-	18e2,272x59,0,0{136x59,0,0,10,135x59,137,0,12}	:
+window	dotfiles-2	1	:nvim	1	:*	f4b2,547x59,0,0{270x59,0,0,4,276x59,271,0,5}	:
+window	playground	1	:zsh	1	:*	23b6,547x59,0,0{247x59,0,0,6,299x59,248,0,7}	:
+window	rmore	1	:zsh	1	:*	a634,272x59,0,0{112x59,0,0,8,159x59,113,0,9}	:
+state	cf	rmore
