@@ -25,7 +25,6 @@ lsp_installer.setup {
     "jsonls",
     "quick_lint_ls",
     "tsserver",
-    "sumneko_lua",
     "zk",
     "prismals",
     "jedi_language_server",
@@ -39,16 +38,9 @@ lsp_installer.setup {
 }
 
 for _, server in ipairs(lsp_installer.get_installed_servers()) do
-  if server.name == "sumneko_lua" then
-    lspconfig.sumneko_lua.setup {
-      require "config.lsp.settings.sumneko_lua",
-      on_attach = require "config.lsp.handlers".on_attach,
-      capabilities = require "config.lsp.handlers".capabilities
-    }
-  end
 
   if server.name == "jsonls" then
-    lspconfig.sumneko_lua.setup {
+    lspconfig.jsonls.setup {
       require "config.lsp.settings.jsonls",
       on_attach = require "config.lsp.handlers".on_attach,
       capabilities = require "config.lsp.handlers".capabilities

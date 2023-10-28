@@ -11,23 +11,40 @@ source $ZSH/oh-my-zsh.sh
 # Config
 alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
-alias vim="nvim"
+alias vim="nvim-base-nvim"
 alias python="python3"
+alias nvim-kickstart="NVIM_APPNAME=kickstart nvim"
+alias nvim-base-nvim="NVIM_APPNAME=base-nvim nvim"
 
 # Path Shortcuts
 alias dev="cd /Users/musyilmaz/Documents/development/"
 alias playground="cd /Users/musyilmaz/Documents/development/playground/"
+alias arceus="cd /Users/musyilmaz/Documents/development/arceus/"
 alias cf="cd /Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/"
+alias urbint="cd /Users/musyilmaz/Documents/development/toptal/urbint/"
 alias rmore="cd /Users/musyilmaz/Documents/development/rmore/"
-alias dot="cd /Users/musyilmaz/Documents/development/dot/"
 alias dotfiles="cd /Users/musyilmaz/Documents/development/dotfiles/"
 alias musyilmaz="cd /Users/musyilmaz/Documents/development/musyilmaz.dev/"
 
+PATH="/usr/local/bin:$PATH"
 PATH="/opt/homebrew/bin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
+
+function nvims() {
+  items=("default" "base-nvim" "kickstart")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt="Neovim Config >> " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+	  echo "Nothing Selected"
+	  return 0
+  elif [[ $config == "default" ]]; then
+	  config="base-nvim"
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -50,3 +67,5 @@ export NVM_DIR="$HOME/.nvm"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
