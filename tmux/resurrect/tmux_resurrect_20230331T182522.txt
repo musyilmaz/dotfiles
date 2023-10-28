@@ -1,5 +1,0 @@
-pane	cf	1	0	:-	1	192.168.68.102	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	1	nvim	:nvim
-pane	cf	2	1	:*	1	192.168.68.109	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server/app	1	node	:node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js dev
-window	cf	1	:nvim	0	:-	cc5e,88x58,0,0,1	:
-window	cf	2	:node	1	:*	cc5f,88x58,0,0,2	:
-state	cf	

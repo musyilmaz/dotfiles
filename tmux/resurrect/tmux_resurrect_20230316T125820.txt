@@ -1,5 +1,0 @@
-pane	cf	1	1	:*	1	192.168.68.102	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	1	zsh	:
-pane	cf	2	0	:-	1	192.168.68.109	:/Users/musyilmaz/Documents/development/toptal/seeeff/cf-server	1	zsh	:
-window	cf	1	:zsh	1	:*	ce62,270x58,0,0,5	:
-window	cf	2	:zsh	0	:-	ce63,270x58,0,0,6	:
-state	cf	
