@@ -11,10 +11,10 @@ source $ZSH/oh-my-zsh.sh
 # Config
 alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
-alias vim="nvim-base-nvim"
+alias vim="nvim-kickstart"
+alias nvim="nvim-kickstart"
 alias python="python3"
 alias nvim-kickstart="NVIM_APPNAME=kickstart nvim"
-alias nvim-base-nvim="NVIM_APPNAME=base-nvim nvim"
 
 # Path Shortcuts
 alias dev="cd /Users/musyilmaz/Documents/development/"
@@ -35,13 +35,13 @@ CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 
 function nvims() {
-  items=("default" "base-nvim" "kickstart")
+  items=("default" "kickstart")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt="Neovim Config >> " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
 	  echo "Nothing Selected"
 	  return 0
   elif [[ $config == "default" ]]; then
-	  config="base-nvim"
+	  config="kickstart"
   fi
   NVIM_APPNAME=$config nvim $@
 }
