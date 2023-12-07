@@ -11,8 +11,8 @@ source $ZSH/oh-my-zsh.sh
 # Config
 alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
-alias nvim="nvims"
-alias vim="nvims"
+alias nvim="nvim"
+alias vim="nvim"
 alias python="python3"
 alias nvim-kickstart="NVIM_APPNAME=kickstart nvim"
 alias nvim-lazyvim="NVIM_APPNAME=lazyvim nvim"
