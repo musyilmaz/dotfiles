@@ -28,9 +28,6 @@ set_keymap("i", ";'", "<ESC>la", opts)
 -- Move cursor to the previous space between characters with ';
 set_keymap("i", "';", "<ESC>i", opts)
 
--- Write buffer with leader w
-set_keymap("n", "<leader>w", ":w<cr>", opts)
-
 -- split window
 set_keymap("n", "ss", ":split<cr>", opts)
 set_keymap("n", "sv", ":vsplit<cr>", opts)
