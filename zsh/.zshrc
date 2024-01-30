@@ -13,6 +13,7 @@ alias zcfg="vim ~/.zshrc"
 alias zrld="source ~/.zshrc"
 alias vim="nvim"
 alias python="python3"
+alias atlas="NVIM_APPNAME=atlas nvim"
 
 # Path Shortcuts
 alias dev="cd /Users/musyilmaz/Documents/development/"

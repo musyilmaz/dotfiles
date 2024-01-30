@@ -1,5 +1,0 @@
-pane	urbint	1	1	:*	1	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-client	1	zsh	:
-pane	urbint	1	1	:*	2	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-client	0	zsh	:
-pane	urbint	1	1	:*	3	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-service	0	zsh	:
-window	urbint	1	:zsh	1	:*	a3ee,272x59,0,0{136x59,0,0,0,135x59,137,0[135x29,137,0,1,135x29,137,30,2]}	:
-state	urbint	
