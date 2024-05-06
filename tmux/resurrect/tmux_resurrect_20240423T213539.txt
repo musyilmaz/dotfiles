@@ -1,0 +1,11 @@
+pane	0	1	0	:-	1	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-client	0	zsh	:
+pane	0	1	0	:-	2	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-client	0	zsh	:
+pane	0	1	0	:-	3	192.168.68.113	:/Users/musyilmaz/Documents/development/toptal/urbint/worker-safety-service	1	zsh	:
+pane	0	2	0	:	1	192.168.68.113	:/Users/musyilmaz/Documents/development/alice	0	zsh	:
+pane	0	2	0	:	2	mustafas-mini	:/Users/musyilmaz/Documents/development/alice	1	zsh	:
+pane	0	3	1	:*	1	mustafas-mini	:/Users/musyilmaz/Documents/development/final_girl	0	zsh	:
+pane	0	3	1	:*	2	mustafas-mini	:/Users/musyilmaz/Documents/development/final_girl	1	nvim	:nvim
+window	0	1	:urbint	0	:-	fc3e,272x59,0,0{135x59,0,0,1,136x59,136,0[136x29,136,0,2,136x29,136,30,3]}	off
+window	0	2	:alice	0	:	1673,547x59,0,0{274x59,0,0,4,272x59,275,0,5}	off
+window	0	3	:final_girl	1	:*	d061,272x59,0,0{136x59,0,0,6,135x59,137,0,7}	off
+state	0	
